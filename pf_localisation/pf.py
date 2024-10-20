@@ -11,9 +11,9 @@ from time import time
 
 class PFLocaliser(PFLocaliserBase):
        
-    def __init__(self):
+    def __init__(self, logger, clock):
         # ----- Call the superclass constructor
-        super(PFLocaliser, self).__init__()
+        super().__init__(logger, clock)
         
         # ----- Set motion model parameters
  
