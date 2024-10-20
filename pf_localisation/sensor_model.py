@@ -2,7 +2,6 @@
 sensor_model.py
 Provides a SensorModel class to calculate particle weights.
 """
-import rclpy
 from . util import getHeading
 
 import math

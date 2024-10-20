@@ -1,12 +1,7 @@
-from geometry_msgs.msg import Pose, PoseArray, Quaternion
+from geometry_msgs.msg import Pose, PoseArray, Quaternion, Point
 from . pf_base import PFLocaliserBase
-import math
-import rclpy
 
 from . util import rotateQuaternion, getHeading
-from random import random
-
-from time import time
 
 
 class PFLocaliser(PFLocaliserBase):

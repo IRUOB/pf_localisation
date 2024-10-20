@@ -6,8 +6,6 @@ before PFLocalisationNode will work.
 Converted to Python
 """
 
-import rclpy
-
 from geometry_msgs.msg import (PoseWithCovarianceStamped, PoseArray,
                                Quaternion,  Transform,  TransformStamped )
 from tf2_msgs.msg import TFMessage

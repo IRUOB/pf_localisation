@@ -20,22 +20,23 @@ This package implements the particle filter localisation using sensor and motion
 
 ### Running the node:
 
-The localisation node can be tested in stage simulation (without the need for robot).
+The localisation node can be tested in the Stage simulator.
 
-        ros2 run nav2_map_server map_server --ros-args -p yaml_filename:=<colcon_ws>/map.yaml
+        ros2 run nav2_lifecycle_manager lifecycle_manager --ros-args -p node_names:=[map_server] -p autostart:=true
+        ros2 run nav2_map_server map_server --ros-args -p yaml_filename:=<path_to_map_file>
         ros2 run stage_ros2 stage_ros2 --ros-args -p world_file:=./src/socspioneer/data/meeting.world
         ros2 launch socspioneer keyboard_teleop.launch.py  # ---- run only if you want to move robot using keyboard 
         ros2 run pf_localisation node.py    # ----- requires completed pf.py methods.
 
-**Don't forget to make node.py executable by using ```chmod +x node.py```**
+For the node to start publishing you must set an initial pose estimate, for example, through RViz2.
 
 ### Published Topics:
 
 Running the node successfully will publish the following topics:
 
-* `/map` 
 * `/amcl_pose` 
-* `/particle_cloud`
+* `/estimatedpose`
+* `/particlecloud`
 
 All of these can be visualised in RViz by adding the appropriate Views.
 

@@ -20,7 +20,6 @@ from tf2_msgs.msg import TFMessage
 from sensor_msgs.msg import LaserScan
 from nav_msgs.msg import OccupancyGrid, Odometry
 import pf_localisation
-from threading import Lock
 
 import sys
 from copy import deepcopy
