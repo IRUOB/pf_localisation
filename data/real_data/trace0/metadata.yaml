@@ -1,0 +1,43 @@
+rosbag2_bagfile_information:
+  compression_format: ''
+  compression_mode: ''
+  custom_data: {}
+  duration:
+    nanoseconds: 96033772048
+  files:
+  - duration:
+      nanoseconds: 96033772048
+    message_count: 4792
+    path: trace0.db3
+    starting_time:
+      nanoseconds_since_epoch: 1603211168591553334
+  message_count: 4792
+  relative_file_paths:
+  - trace0.db3
+  ros_distro: rosbags
+  starting_time:
+    nanoseconds_since_epoch: 1603211168591553334
+  storage_identifier: sqlite3
+  topics_with_message_count:
+  - message_count: 2876
+    topic_metadata:
+      name: /tf
+      offered_qos_profiles: ''
+      serialization_format: cdr
+      type: tf2_msgs/msg/TFMessage
+      type_description_hash: RIHS01_e369d0f05a23ae52508854b66f6aa0437f3449d652e8cbf22d5abe85d020f087
+  - message_count: 958
+    topic_metadata:
+      name: /odom
+      offered_qos_profiles: ''
+      serialization_format: cdr
+      type: nav_msgs/msg/Odometry
+      type_description_hash: RIHS01_3cc97dc7fb7502f8714462c526d369e35b603cfc34d946e3f2eda2766dfec6e0
+  - message_count: 958
+    topic_metadata:
+      name: /base_scan
+      offered_qos_profiles: ''
+      serialization_format: cdr
+      type: sensor_msgs/msg/LaserScan
+      type_description_hash: RIHS01_64c191398013af96509d518dac71d5164f9382553fce5c1f8cca5be7924bd828
+  version: 8
